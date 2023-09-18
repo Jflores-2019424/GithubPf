@@ -10,6 +10,17 @@ body{
     height: 100vh;
 }
 
+.repo{
+    background-color: rgb(36, 36, 116);
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+
 input{
     background-color: rgb(120, 16, 217);
     color: white;
