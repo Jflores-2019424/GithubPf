@@ -21,6 +21,15 @@ body{
     color: #fff;
 }
 
+.card{
+    background-color: rgb(120, 16, 217);
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    display: flex;
+    padding: 20px;
+    margin: 0 10px;
+}
+
 input{
     background-color: rgb(120, 16, 217);
     color: white;
