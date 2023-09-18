@@ -25,10 +25,10 @@ async function getRepos(username){
     }
 }
 
-function addRepos(repos){
+function addRepos(rep){
     const repos = document.getElementById("repos")
 
-    repos.slice(0 ,5).forEach(repo =>{
+    rep.slice(0 ,5).forEach(repo =>{
         const reposy = document.createElement("a")
         reposy.classList.add("repo")
         reposy.href = repo.html_url
