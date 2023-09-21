@@ -51,6 +51,7 @@ function createCard(user) {
         </div>
         <div class="user">
         <h2>${user.name}</h2>
+        <h3>${user.login}</h3>
         <p>${user.bio}</p>
         <ul>
             <li>${user.followers} <strong>Followers</strong></li>
