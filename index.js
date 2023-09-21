@@ -1,4 +1,5 @@
 const API = 'https://api.github.com/users/'
+const User = 'http://github.com/'
 
 const result = document.getElementById("result")
 const search = document.getElementById("search")
@@ -25,6 +26,7 @@ async function getRepos(username){
     }
 }
 
+
 function addRepos(rep){
     const repos = document.getElementById("repos")
 
@@ -43,9 +45,11 @@ function createCard(user) {
     const cardHTML = `
     <div class="card">
         <div>
-        <img src="${user.avatar_url}" alt="${user.name}" class="avatar">
+        <a href="${user.html_url}">
+        <img id="avatar" src="${user.avatar_url}" alt="${user.name}" class="avatar">
+        </a>
         </div>
-        <div class="user-info">
+        <div class="user">
         <h2>${user.name}</h2>
         <p>${user.bio}</p>
         <ul>
