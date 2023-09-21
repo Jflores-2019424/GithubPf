@@ -19,6 +19,15 @@ body{
     display: inline-block;
     text-decoration: none;
     color: #fff;
+    transition: 0.5s;
+}
+
+.repo:hover{
+    transform: scale(1.1);
+}
+
+.repo:active{
+    transform: scale(0.9);
 }
 
 .card{
@@ -26,7 +35,7 @@ body{
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
     display: flex;
-    margin: 10px;
+    margin: 10vh;
     padding: 20px;
     margin: 0 10px;
 }
@@ -37,17 +46,35 @@ body{
 
 .card ul{
     display: flex;
+    justify-content: left;
 }
 
 .card li{
-    margin: 5px;
+    margin: 1vh;
+   justify-content: left;
 }
 
 .avatar{
     height: 30vh;
-    margin: 10px;
+    margin: 2vh;
     border-radius: 360px;
     border: 5px purple solid;
+    transition: 0.5s;
+}
+
+.avatar:hover{
+    transform: scale(1.1) translateX(-20px) translateY(-20px);
+}
+
+.user{
+    font-weight: bold;
+    margin: 1vh;
+
+}
+
+form{
+    display: flex;
+    justify-content: center;
 }
 
 input{
