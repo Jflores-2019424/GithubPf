@@ -38,6 +38,16 @@ body{
     margin: 10vh;
     padding: 20px;
     margin: 0 10px;
+    box-shadow: rgba(179, 26, 193, 0.4) -5px 5px, rgba(198, 46, 240, 0.3) -10px 10px, rgba(179, 46, 240, 0.2) -15px 15px, rgba(217, 46, 240, 0.1) -20px 20px, rgba(204, 46, 240, 0.05) -25px 25px;
+}
+
+.card h2{
+    font-size: 4vh;
+}
+
+.card h3{
+    margin-top: -15px;
+    padding: 0;
 }
 
 .card ul li{
@@ -51,7 +61,7 @@ body{
 
 .card li{
     margin: 1vh;
-   justify-content: left;
+    justify-content: left;
 }
 
 .avatar{
@@ -63,7 +73,11 @@ body{
 }
 
 .avatar:hover{
-    transform: scale(1.1) translateX(-20px) translateY(-20px);
+    transform: scale(1.2) translateX(-20px) translateY(-20px);
+}
+
+.avatar:active{
+    transform: scale(0.9);
 }
 
 .user{
@@ -75,6 +89,13 @@ body{
 form{
     display: flex;
     justify-content: center;
+}
+
+form img{
+    height: 8.5vh;
+    border: purple 2px solid;
+    border-radius: 360px;
+    box-shadow: purple 5px;
 }
 
 input{
@@ -100,4 +121,5 @@ input::placeholder{
 
 input:focus{
     outline: none;
+    
 }
